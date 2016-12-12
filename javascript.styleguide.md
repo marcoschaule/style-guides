@@ -1,10 +1,9 @@
-i:fox Coding Standard JavaScript
-================================
+Coding Standard JavaScript
+==========================
 
 General guidelines
 ------------------
 
-* JavaScript global function and object prefix: `ifox`
 * Investigate third-party code like jQuery plugins before building your own - balance the cost
     of integration and bloat versus benefits of standardization and code consistency
 * Avoid embedding JavaScript code in HTML; use external libraries instead
