@@ -139,8 +139,9 @@ Variable names
 #### Boolean type
 
 * `bool...`: boolean type (`boolDone`, `boolCreated`)
+* `b...`: boolean type (`bDone`, `bCreated`)
+* `be...`: boolean type (`beDone`, `beCreated`)
 * `is...`: state (`isDone`, `isCreated`)
-* `do...`: action (`doReact`, `doCreate`)
 * `has...`: inclusion (`hasMembers`, `hasClients`)
 
 #### String type
@@ -154,7 +155,7 @@ Variable names
 
 * `num...`: general number (integer or decimal) type (`numPlayers`, `numCounter`)
 * `index...`, `i`: integer index type (`indexUsers`, `iUsers`)
-* `ìnt...`: general integer type (`intSizeX`, `intOffsetX`)
+* `int...`: general integer type (`intSizeX`, `intOffsetX`)
 * `dec...`, `flt...`: general decimal/floating number type (`decRatio`, `fltOpacity`)
 * `i`, `j`, `k`: integer index counter variables
 
@@ -212,6 +213,10 @@ Variable names
     ```
 
     In this object there should only be string and number properties.
+
+#### Special naming conventions for variables
+
+* In node/express use `req` for request and `res` for response objects.
 
 ### Function name conventions
 
