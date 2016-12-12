@@ -266,9 +266,9 @@ Variable names
     (`removeUser`, `removeEmailFromUser`)
 * `insert...`, `push...`: insert element in array or object
     (`insertUserInUserList`, `pushClientIntoClientList`)
-* `remove`, `pull...`: remove element from array or object
+* `remove...`, `pull...`: remove element from array or object
     (`removeUserFromUserList`, `pullClientFromClientList`)
-* `empty`: remove all elements from array or object
+* `empty...`: remove all elements from array or object
     (`emptyUsersInUserList`)
 
 Namespaces and file layout
