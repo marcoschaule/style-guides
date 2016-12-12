@@ -151,7 +151,7 @@ Variable names
 * `id...`: string identifiers (`idUser`, `idMember`)
 * `html...`: HTML strings (`htmlForm`, `htmlElement`)
 
-### Number type
+#### Number type
 
 * `num...`: general number (integer or decimal) type (`numPlayers`, `numCounter`)
 * `index...`, `i`: integer index type (`indexUsers`, `iUsers`)
@@ -178,6 +178,13 @@ Variable names
 
 * `map...`: general map type (`mapEmployees`)
 * `set...`: general set type (`setNumbers`)
+
+#### DOM types
+
+* `sel...`: native DOM selector type (`selDivWrapper`)
+* `el...`: native DOM element type (`elDivWrapper`)
+* `$el...`: jQuery wrapped DOM element type (`$elDivWrapper`) or
+* `jel...`: jQuery wrapped DOM element type (`jelDivWrapper`)
 
 #### Unformatted and constant objects
 
@@ -249,7 +256,7 @@ Variable names
 * `patch...`: patch data in a external source (`patchUserName`)
 * `delete...`: delete data in an external source (`deleteUser`)
 
-### Conventions for internal sources
+#### Conventions for internal sources
 
 * `get...`: get data from a local source (`getUserList`)
 * `save...`: save an existing local source (`saveUserList`)
