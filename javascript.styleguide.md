@@ -1,5 +1,5 @@
-Coding Standard JavaScript
-==========================
+Style Guide JavaScript
+======================
 
 General guidelines
 ------------------
@@ -177,6 +177,41 @@ Variable names
 
 * `map...`: general map type (`mapEmployees`)
 * `set...`: general set type (`setNumbers`)
+
+#### Unformatted and constant objects
+
+* To indicate that an object contains unformatted properties (including sub-objects), add
+    the `_u` postfix to the variable's name.
+
+    Example:
+
+    ``` JavaScript
+    var objUser_u = {
+        username : 'jonDoe',
+        firstName: 'Jon',
+        lastName : 'Doe',
+        email    : 'jondoe@email.org'
+    };
+    ```
+
+    None of the object's properties has a prefix to express its type. Usually data from servers
+    and unformatted APIs lack in prefixes for which this notation is useful.
+
+* To indicate that an object contains constant values, add
+    the `_c` postfix to the variable's name.
+
+    Example:
+
+    ``` JavaScript
+    var objUser_c = {
+        USERNAME  : 'jonDoe',
+        FIRST_NAME: 'Jon',
+        LAST_NAME : 'Doe',
+        EMAIL     : 'jondoe@email.org'
+    };
+    ```
+
+    In this object there should only be string and number properties.
 
 ### Function name conventions
 
