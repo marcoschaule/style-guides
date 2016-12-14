@@ -88,9 +88,11 @@ or
  *
  * @private
  * @param  {array} arrBooksSource - array of texts of books source
- * @return {array} arrBooksResult - array of book objects result
+ * @return {array}                - array of book objects result
  */
 function _makeBookObjectsFromBooksList(arrBooksSource) {
+    // make book objects from book list and push them into an array
+    return arrBooks;
 }
 ```
 
@@ -184,7 +186,6 @@ Variable names
 * `sel...`: native DOM selector type (`selDivWrapper`)
 * `el...`: native DOM element type (`elDivWrapper`)
 * `$el...`: jQuery wrapped DOM element type (`$elDivWrapper`) or
-* `jel...`: jQuery wrapped DOM element type (`jelDivWrapper`)
 
 #### Unformatted and constant objects
 
