@@ -12,6 +12,8 @@ web project efficiently and in best practices. You can find here:
     which describe how to use JavaScript in best practices,
 * [**AngularJS 1.x Style Guides**](angularjs.md):  
     which are basically the _John Papa_ style guides for AngularJS 1.x,
+* [**AngularJS 2+ Style Guides**](angular2+.md):  
+    which are the Angular 2+ style guides by John Papa, extended by some features,
 * [**Git Best Practices and Style Guides**](git.md) (Comming soon):  
     which define Best Practices for working with Git,
 * etc.

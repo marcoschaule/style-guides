@@ -1,7 +1,7 @@
-Coding Standard AngularJS
-=========================
+Style Guides and Coding Standard for AngularJS 1.x
+==================================================
 
-Referenced style guides
+Referenced Style Guides
 -----------------------
 
 * John Papa AngularJS Style Guide for AngularJS 1.x:
