@@ -12,7 +12,15 @@ Referenced Style Guides
 Custom extensions
 -----------------
 
-### Service CRUD member function names
+### Naming conventions
+
+* DO use an underscore for private members variables and functions!
+  _Why?_ Since there is no way (yet) for the template to differ between
+  public and private members and since in development the compiler
+  won't complain (yet) about the usage of privates, the underscore
+  identifies private members on sight.
+
+#### Service CRUD member function names
 
 * Do use `create` for creating function names
 * Do use `read` for reading function names.
@@ -35,7 +43,7 @@ export class UserService {
 ```
 
 
-### Component CRUD member function names
+#### Component CRUD member function names
 
 * Do use `doCreate` for creating function names
 * Do use `doRead` for reading function names.
