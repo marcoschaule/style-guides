@@ -14,11 +14,15 @@ Custom extensions
 
 ### Naming conventions
 
+
+#### Underscore for private members
+
 * DO use an underscore for private members variables and functions!
   _Why?_ Since there is no way (yet) for the template to differ between
   public and private members and since in development the compiler
   won't complain (yet) about the usage of privates, the underscore
   identifies private members on sight.
+
 
 #### Service CRUD member function names
 
