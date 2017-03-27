@@ -9,8 +9,8 @@ Referenced Style Guides
     https://angular.io/docs/ts/latest/guide/style-guide.html
 
 
-Custom extensions
------------------
+Custom extensions and overrides
+-------------------------------
 
 ### Naming conventions
 
@@ -31,18 +31,33 @@ Custom extensions
 * Do use `update` for updating function names.
 * Do use `delete` for deleting function names.
 
-Example of a user service:
+Example of a user service and observables:
 ```javascript
 @Injectable()
 export class UserService {
-    createUser(user)     : void { /* ... */  }
-    createUsers(users)   : void { /* ... */  } // rather unlikely, for population
-    readUser(userId)     : void { /* ... */  }
-    readUsers(userIds)   : void { /* ... */  }
-    updateUser(user)     : void { /* ... */  }
-    updateUsers(users)   : void { /* ... */  }
-    deleteUser(userId)   : void { /* ... */  }
-    deleteUsers(userIds) : void { /* ... */  }
+    createUser(user: UserNew)      : Observable<User>    { /* ... */ }
+    createUsers(users: UserNew[])  : Observable<User[]>  { /* ... */ } // rather unlikely, for population
+    readUser(userId: number)       : Observable<User>    { /* ... */ }
+    readUsers(userIds?: number[])  : Observable<User[]>  { /* ... */ }
+    updateUser(user: User)         : Observable<User>    { /* ... */ }
+    updateUsers(users: User[])     : Observable<User[]>  { /* ... */ }
+    deleteUser(userId: number)     : Observable<Boolean> { /* ... */ }
+    deleteUsers(userIds?: number[]): Observable<Boolean> { /* ... */ }
+}
+```
+
+Example of a user service and promises:
+```javascript
+@Injectable()
+export class UserService {
+    createUser(user: UserNew)      : Promise<User>    { /* ... */ }
+    createUsers(users: UserNew[])  : Promise<User[]>  { /* ... */ } // rather unlikely, for population
+    readUser(userId: number)       : Promise<User>    { /* ... */ }
+    readUsers(userIds?: number[])  : Promise<User[]>  { /* ... */ }
+    updateUser(user: User)         : Promise<User>    { /* ... */ }
+    updateUsers(users: User[])     : Promise<User[]>  { /* ... */ }
+    deleteUser(userId: number)     : Promise<Boolean> { /* ... */ }
+    deleteUsers(userIds?: number[]): Promise<Boolean> { /* ... */ }
 }
 ```
 
@@ -62,13 +77,13 @@ Example of a user service:
     // ...
 })
 export class UserComponent {
-    doCreateUser(user)     : void { /* ... */  }
-    doCreateUsers(users)   : void { /* ... */  } // rather unlikely, for population
-    doReadUser(userId)     : void { /* ... */  }
-    doReadUsers(userIds)   : void { /* ... */  }
-    doUpdateUser(user)     : void { /* ... */  }
-    doUpdateUsers(users)   : void { /* ... */  }
-    doDeleteUser(userId)   : void { /* ... */  }
-    doDeleteUsers(userIds) : void { /* ... */  }
+    doCreateUser(user: User)        : void { /* ... */ }
+    doCreateUsers(users: User[])    : void { /* ... */ } // rather unlikely, for population
+    doReadUser(userId: number)      : void { /* ... */ }
+    doReadUsers(userIds: number[])  : void { /* ... */ }
+    doUpdateUser(user: User)        : void { /* ... */ }
+    doUpdateUsers(users: User[])    : void { /* ... */ }
+    doDeleteUser(userId: number)    : void { /* ... */ }
+    doDeleteUsers(userIds: number[]): void { /* ... */ }
 }
 ```
