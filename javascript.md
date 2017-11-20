@@ -114,10 +114,10 @@ Variable names
     clear. For example, instead of using a variable called config we can use the more
     descriptive and obviously module-scoped configMap.
     Objects typically have a concrete "real world" analog and we name them accordingly:
-* An object variable name should be a noun followed by an optional modifier, e.g.
-    employee or receipt.
-* Make sure a module-scoped object variable name has two syllables or more so the
-    scope is clear, e.g. storeEmployee or salesReceipt.
+    * An object variable name should be a noun followed by an optional modifier, e.g.
+        employee or receipt.
+    * Make sure a module-scoped object variable name has two syllables or more so the
+        scope is clear, e.g. storeEmployee or salesReceipt.
 * Prefix jQuery objects with a $. This is a pretty common convention these days, and
     jQuery objects (or collections as they are sometimes called) are quite prevalent in SPAs.
 
